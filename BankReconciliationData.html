@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" data-layout-mode="light_mode">
+<!--================================================================================================
+Created By Vaijanath Pawale - Team Lead-UI/Graphic Design
+----------------------------------------------------------------------------------------------
+Product Name: Nuvama - AR Tracker
+Version:
+Author: 
+Author URL: 
+================================================================================================-->
+<head>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="robots" content="">
+	<title>Nuvama - AR Tracker</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+	<!-- Apple Touch Icon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Datetimepicker CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+	<!-- animation CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+	<!-- Datatable CSS -->
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap5.min.css">
+
+	<!-- Select2 CSS -->
+	<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+	<!-- Daterangepikcer CSS -->
+	<link rel="stylesheet" href="assets/plugins/daterangepicker/daterangepicker.css">
+
+	<!-- Tabler Icon CSS -->
+	<link rel="stylesheet" href="assets/plugins/tabler-icons/tabler-icons.css">
+
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+	<!-- Color Picker Css -->
+	<link rel="stylesheet" href="assets/plugins/%40simonwep/pickr/themes/nano.min.css">
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+	<div id="global-loader">
+		<div class="whirly-loader"> </div>
+	</div>
+	<!-- Main Wrapper -->
+	<div class="main-wrapper">
+
+		<!-- Header -->
+		<div class="header">
+			<div class="main-header">
+				<!-- Logo -->
+				<div class="header-left active">
+					<a href="index.html" class="logo logo-normal">
+						<img src="assets/img/logo.png" alt="Img">
+					</a>
+					<a href="index.html" class="logo logo-white">
+						<img src="assets/img/logo-white.png" alt="Img">
+					</a>
+					<a href="index.html" class="logo-small">
+						<img src="assets/img/logo-small.png" alt="Img">
+					</a>
+				</div>
+				<!-- /Logo -->
+				<a id="mobile_btn" class="mobile_btn" href="#sidebar">
+					<span class="bar-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+
+				<!-- Header Menu -->
+				<ul class="nav user-menu">
+
+					<!-- Search -->
+					<li class="nav-item nav-searchinputs">
+						<div class="top-nav-search">
+							<a href="javascript:void(0);" class="responsive-search">
+								<i class="fa fa-search"></i>
+							</a>
+							<form action="#" class="dropdown">
+								<div class="searchinputs input-group dropdown-toggle" id="dropdownMenuClickable" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+									<input type="text" placeholder="Search by Client Name, Phone, etc.">
+									<div class="search-addon">
+										<span><i class="ti ti-search"></i></span>
+									</div>
+								</div>
+							</form>
+						</div>
+					</li>
+					<!-- /Search -->
+					<li class="nav-item dropdown nav-item-box">
+						<div class="alert bg-orange-transparent alert-dismissible fade show my-2">
+							<div>
+								<span><i class="ti ti-info-circle fs-14 text-orange me-2"></i>Session Expires in, </span> <span class="text-orange fw-semibold"> 19m 50s </span>
+							</div>
+						</div>
+					</li>
+
+					 <!-- Last Updates -->
+					<li class="nav-item dropdown nav-item-box">
+						<span>Last updated: </span><span>2 minutes ago</span>
+					</li>
+					<!-- /Last Updates -->
+
+					<!-- Notifications -->
+					<li class="nav-item dropdown nav-item-box">
+						<a href="javascript:void(0);" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+							<i class="ti ti-bell"></i><span class="badge rounded-pill">2</span>
+						</a>
+						<div class="dropdown-menu notifications">
+							<div class="topnav-dropdown-header">
+								<h5 class="notification-title">Notifications</h5>
+								<a href="javascript:void(0)" class="clear-noti">Mark all as read</a>
+							</div>
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<a href="activities.html">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img alt="Img" src="assets/img/profiles/avatar1.png">
+												</span>
+												<div class="flex-grow-1">
+													<p class="noti-details"><span class="noti-title">James Kirwin</span> Lorem Ipsum is simply dummy text of the printing and type setting indus ideas.</p>
+													<p class="noti-time">4 mins ago</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="activities.html">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img alt="Img" src="assets/img/profiles/avatar1.png">
+												</span>
+												<div class="flex-grow-1">
+													<p class="noti-details"><span class="noti-title">Leo Kelly</span> Lorem Ipsum is simply dummy text of the printing and type setting indus ideas.</p>
+													<p class="noti-time">10 mins ago</p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer d-flex align-items-center gap-3">
+								<a href="#" class="btn btn-outline-secondary rounded-pill btn-md w-100">Cancel</a>
+								<a href="activities.html" class="btn btn-outline-danger rounded-pill btn-md w-100">View all</a>
+							</div>
+						</div>
+					</li>
+					<!-- /Notifications -->
+
+					<li class="nav-item dropdown has-arrow main-drop profile-nav">
+						<a href="javascript:void(0);" class="nav-link userset" data-bs-toggle="dropdown">
+							<span class="user-info p-0">
+								<span class="user-img me-2">
+									<img src="assets/img/profiles/avatar1.png" alt="Img" class="img-fluid">
+								</span>
+								<div>
+									<h6 class="fw-medium fw-bold">Raj Gabhane</h6>
+									<p class="fw-normal"><u>Regional Manager</u></p>
+								</div>
+							</span>
+						</a>
+						<div class="dropdown-menu menu-drop-user">
+							<a class="dropdown-item" href="#"><i class="ti ti-user-circle me-2"></i>MyProfile</a>
+							<a class="dropdown-item" href="#"><i class="ti ti-file-text me-2"></i>Reports</a>
+							<a class="dropdown-item" href="#"><i class="ti ti-settings-2 me-2"></i>Settings</a>
+							<hr class="my-2">
+							<a class="dropdown-item logout pb-0" href="#"><i class="ti ti-logout me-2"></i>Logout</a>
+						</div>
+					</li>
+				</ul>
+				<!-- /Header Menu -->
+
+				<!-- Mobile Menu -->
+				<div class="dropdown mobile-user-menu">
+					<a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+						aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#">My Profile</a>
+						<a class="dropdown-item" href="#">Settings</a>
+						<a class="dropdown-item" href="#">Logout</a>
+					</div>
+				</div>
+				<!-- /Mobile Menu -->
+			</div>
+		</div>
+		<!-- /Header -->
+
+		<!-- Sidebar -->
+		<div class="sidebar" id="sidebar">
+			<!-- Logo -->
+			<div class="sidebar-logo active">
+				<a href="index.html" class="logo logo-normal">
+					<img src="assets/img/logo.png" alt="Img">
+				</a>
+				<a href="index.html" class="logo logo-white">
+					<img src="assets/img/logo-white.png" alt="Img">
+				</a>
+				<a href="index.html" class="logo-small">
+					<img src="assets/img/logo-small.png" alt="Img">
+				</a>
+				<a id="toggle_btn" href="javascript:void(0);">
+					<i data-feather="chevron-left" class="feather-16"></i>
+				</a>
+			</div>
+			<!-- /Logo -->
+			<div class="sidebar-inner slimscroll">
+				<div id="sidebar-menu" class="sidebar-menu">
+					<ul>
+						<li class="submenu-open">
+							<ul>
+								<li class="active"><a href="#"><i
+											class="ti ti-layout-grid fs-16 me-2"></i><span>Home</span></a></li>
+								<li><a href="#"><i class="ti ti-table-plus fs-16 me-2"></i><span>Credit
+											Memo</span></a></li>
+								<li><a href="#"><i class="ti ti-progress-alert fs-16 me-2"></i><span>Bulk FN
+											Approver</span></a></li>
+								<li><a href="#"><i class="ti ti-trending-up-2 fs-16 me-2"></i><span>Bulk
+											Invoice Download</span></a></li>
+								<li><a href="#"><i class="ti ti-list-details fs-16 me-2"></i><span>Admin</span></a></li>
+								<li class="submenu">
+									<a href="javascript:void(0);"><i
+											class="ti ti-map-pin-pin fs-16 me-2"></i><span>Masters</span><span
+											class="menu-arrow"></span></a>
+									<ul>
+										<li><a href="#">User Master</a></li>
+										<li><a href="RoleMaster.html">Role Master</a></li>
+										<li><a href="#">User Role Mapping Master</a></li>
+									</ul>
+								</li>
+								<li><a href="#"><i class="ti ti-triangles fs-16 me-2"></i><span>Help</span></a></li>
+								<li><a href="#"><i class="ti ti-brand-unity fs-16 me-2"></i><span>Bank
+											Credit</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /Sidebar -->
+
+		<div class="page-wrapper">
+			<div class="content">
+
+				<div class="d-flex align-items-center justify-content-between flex-wrap gap-3 mb-2">
+					<ul class="breadcrumb breadcrumb-divide mb-0">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Bank Reconciliation Data</li>
+					</ul>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">Bank Reconciliation Data</h5>
+							</div>
+							<div class="card-body">
+								<form action="#">
+									<div class="row">
+										<div class="col-md-3">
+											<div class="mb-3">
+												<label class="form-label">Date</label>
+												<div class="input-icon-start position-relative mb-3">
+													<span class="input-icon-addon fs-16 text-gray-9">
+														<i class="ti ti-calendar"></i>
+													</span>
+													<input type="text" class="form-control date-range bookingrange" placeholder="Search Product">
+												</div>
+											</div>
+											</div>
+											<div class="col-md-3">
+											<div class="mb-3">
+												<label class="form-label">Entity</label>
+												<input type="text" class="form-control" placeholder="Enter Entity">
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="mb-3">
+												<label class="form-label">Bank</label>
+												<input type="text" class="form-control" placeholder="Enter Bank">
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="mb-3">
+												<label class="form-label">A/C No.</label>
+												<input type="text" class="form-control" placeholder="Enter A/C No.">
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="mb-3">
+												<label class="form-label">Particulars</label>
+												<input type="text" class="form-control" placeholder="Enter Particulars">
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="mb-3">
+												<label class="form-label">Pending with Lob User</label>
+												<select class="select">
+													<option>Select</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-3 mt-4">
+											<button type="submit" class="btn btn-outline-danger rounded-pill">Search</button>
+											<button type="submit" class="btn btn-outline-secondary rounded-pill">Clear Filter</button>
+										</div>
+									</div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<!-- Search Result -->
+						<div class="card">
+							
+							<div class="card-body p-0">
+								<div class="table-responsive">
+									<table class="table MyDataTable">
+										<thead class="thead-light">
+											<tr>
+												<th class="no-sort">
+													<label class="checkboxs">
+														<input type="checkbox" id="select-all">
+														<span class="checkmarks"></span>
+													</label>
+												</th>
+												<th>Trans. No.</th>
+												<th>Entity</th>
+												<th>Bank</th>
+												<th>A/C No.</th>
+												<th>Date of Trans.</th>
+												<th>Particulars</th>
+												<th>Cheque No.</th>
+												<th>Amount</th>
+												<th>Category</th>
+												<th class="no-sort">Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td>BRS109</td>
+												<td>NWFL</td>
+												<td>ICICI Bank</td>
+												<td>000405000549</td>
+												<td>16-05-2024</td>
+												<td>CMS/232600 CFT 71178 00594/EDELWEISS GROUP FUND</td>
+												<td>-</td>
+												<td>24,41,405.00</td>
+												<td>BC</td>
+												<td><a class="me-2 p-2" href="#" data-bs-toggle="modal" data-bs-target="#edit-units">
+													<i data-feather="eye" class="action-eye"></i>
+												</a></td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td>BRS109</td>
+												<td>NWFL</td>
+												<td>ICICI Bank</td>
+												<td>000405000549</td>
+												<td>16-05-2024</td>
+												<td>CMS/232600 CFT 71178 00594/EDELWEISS GROUP FUND</td>
+												<td>-</td>
+												<td>24,41,405.00</td>
+												<td>BC</td>
+												<td><a class="me-2 p-2" href="#" data-bs-toggle="modal" data-bs-target="#edit-units">
+													<i data-feather="eye" class="action-eye"></i>
+												</a></td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td>BRS109</td>
+												<td>NWFL</td>
+												<td>ICICI Bank</td>
+												<td>000405000549</td>
+												<td>16-05-2024</td>
+												<td>CMS/232600 CFT 71178 00594/EDELWEISS GROUP FUND</td>
+												<td>-</td>
+												<td>24,41,405.00</td>
+												<td>BC</td>
+												<td><a class="me-2 p-2" href="#" data-bs-toggle="modal" data-bs-target="#edit-units">
+													<i data-feather="eye" class="action-eye"></i>
+												</a></td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td>BRS109</td>
+												<td>NWFL</td>
+												<td>ICICI Bank</td>
+												<td>000405000549</td>
+												<td>16-05-2024</td>
+												<td>CMS/232600 CFT 71178 00594/EDELWEISS GROUP FUND</td>
+												<td>-</td>
+												<td>24,41,405.00</td>
+												<td>BC</td>
+												<td><a class="me-2 p-2" href="#" data-bs-toggle="modal" data-bs-target="#edit-units">
+													<i data-feather="eye" class="action-eye"></i>
+												</a></td>
+											</tr>
+											<tr>
+												<td>
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td>BRS109</td>
+												<td>NWFL</td>
+												<td>ICICI Bank</td>
+												<td>000405000549</td>
+												<td>16-05-2024</td>
+												<td>CMS/232600 CFT 71178 00594/EDELWEISS GROUP FUND</td>
+												<td>-</td>
+												<td>24,41,405.00</td>
+												<td>BC</td>
+												<td><a class="me-2 p-2" href="#" data-bs-toggle="modal" data-bs-target="#edit-units">
+													<i data-feather="eye" class="action-eye"></i>
+												</a></td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!-- /Search Result -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- /Main Wrapper -->
+
+	<!-- jQuery -->
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+
+	<!-- Feather Icon JS -->
+	<script src="assets/js/feather.min.js"></script>
+
+	<!-- Slimscroll JS -->
+	<script src="assets/js/jquery.slimscroll.min.js"></script>
+
+	<!-- Datatable JS -->
+	<script src="assets/js/jquery.dataTables.min.js"></script>
+	<script src="assets/js/dataTables.bootstrap5.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+	<!-- ApexChart JS -->
+	<script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+	<script src="assets/plugins/apexchart/chart-data.js"></script>
+
+	<!-- Chart JS -->
+	<script src="assets/plugins/chartjs/chart.min.js"></script>
+	<script src="assets/plugins/chartjs/chart-data.js"></script>
+
+	<!-- Daterangepikcer JS -->
+	<script src="assets/js/moment.min.js"></script>
+	<script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+
+	<!-- Select2 JS -->
+	<script src="assets/plugins/select2/js/select2.min.js"></script>
+
+	<!-- Color Picker JS -->
+	<script src="assets/plugins/%40simonwep/pickr/pickr.es5.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="assets/js/theme-colorpicker.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
